@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Membuat Link ke Dokumen Lain</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif; /* Menggunakan font klasik */
+            background-color: #f5f5dc; /* Warna latar belakang klasik */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            background-color: #d2b48c; /* Warna coklat muda klasik */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            color: #8b4513; /* Warna coklat klasik */
+            margin-bottom: 20px;
+        }
+
+        .photo-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .photo-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .photo-box:hover img {
+            transform: scale(1.05);
+        }
+
+        .photo-box p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+            transition: background 0.3s;
+        }
+
+        .photo-box:hover p {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        video, audio {
+            width: 100%;
+            max-width: 100%;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Istana Maimun</h1>
+        <div class="photo-container">
+            <div class="photo-box">
+                <img src="foto2.jpg" alt="Istana Maimun dari samping">
+                <p>Istana Maimun merupakan bangunan peninggalan kerajaan Deli.</p>
+            </div>
+            <div class="photo-box">
+                <img src="foto3.jpg" alt="Istana Maimun dari depan">
+                <p>Istana Maimun yang menjadi salah satu bukti kejayaan Kesultanan Deli.</p>
+            </div>
+            <div class="photo-box">
+                <img src="foto4.jpg" alt="Istana Maimun dari samping">
+                <p>Istana Maimun menjadi salah satu destinasi wisata sejarah di Kota Medan.</p>
+            </div>
+            <div class="photo-box">
+                <img src="foto5.jpg" alt="Istana Maimun dari dalam">
+                <p>Istana Maimun masih berfungsi sebagai tempat upacara adat Kerajaan Deli.</p>
+            </div>
+        </div>
+
+        <video controls>
+            <source src="vid1.mp4" type="video/mp4">
+            Video dapat diputar.
+        </video>
+
+        <audio controls>
+            <source src="koplo.mp3" type="audio/mp3">
+            Audio tidak dapat diputar.
+        </audio>
+    </div>
+</body>
+</html>

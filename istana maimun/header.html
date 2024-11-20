@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Font modern yang keren */
+            background-color: #f5f5dc; /* Warna latar belakang klasik */
+        }
+
+        header {
+            background-color: #8b4513; /* Warna coklat klasik */
+            padding: 5px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 2.5em; /* Ukuran font */
+            margin: 0;
+            color: #fff8dc; /* Warna teks klasik */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s, color 0.3s; /* Efek transisi */
+        }
+
+        header h3 {
+            font-size: 1.2em; /* Ukuran font */
+            margin-top: 10px;
+            color: #fff8dc; /* Warna teks klasik */
+            font-style: italic;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s, color 0.3s; /* Efek transisi */
+        }
+
+        header h1, header h3 {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Efek hover */
+        header h1:hover {
+            transform: scale(1.1); /* Membesar saat hover */
+            color: #d2691e; /* Warna saat hover */
+        }
+
+        header h3:hover {
+            transform: scale(1.05); /* Membesar saat hover */
+            color: #d2691e; /* Warna saat hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Istana Maimun</h1>
+        <h3><i>Bangunan kuil di Indonesia</i></h3>
+    </header>
+</body>
+</html>

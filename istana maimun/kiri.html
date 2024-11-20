@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Menu - Istana Maimun</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif; /* Menggunakan font klasik */
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc; /* Warna latar belakang klasik */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .menu {
+            background-color: #d2b48c; /* Warna coklat muda klasik */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 200px;
+        }
+
+        .menu-header {
+            font-size: 1.5em;
+            color: #8b4513; /* Warna coklat klasik */
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: #8b4513; /* Warna coklat klasik untuk teks */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .menu a:hover {
+            background-color: #b8860b; /* Warna emas klasik saat hover */
+            color: white; /* Warna teks putih saat hover */
+            transform: translateY(-2px);
+        }
+
+        .menu a.active {
+            background-color: #8b4513; /* Warna coklat klasik untuk link aktif */
+            color: white; /* Warna teks putih untuk link aktif */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-header">Menu</div>
+        <a href="tengah.html" target="tengah" class="active">
+           Sejarah
+        </a>
+        <a href="galeri.html" target="tengah">
+            Galeri
+        </a>
+        <a href="lokasi.html" target="tengah">
+            Lokasi
+        </a>
+    </div>
+</body>
+</html>
